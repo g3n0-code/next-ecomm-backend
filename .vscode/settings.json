@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5443,
+            "driver": "PostgreSQL",
+            "database": "next-ecomm",
+            "name": "next--ecomm-backend",
+            "username": "next",
+            "password": "next"
+        }
+    ]
+}
