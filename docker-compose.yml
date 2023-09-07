@@ -11,3 +11,15 @@ services:
       - '${POSTGRES_PORT}:5432'
     volumes:
       - ./db:/var/lib/postgresql/data
+
+  testdb:
+    image: postgres:14.1-alpine
+    restart: always
+    environment:
+      - POSTGRES_USER
+      - POSTGRES_PASSWORD
+      - POSTGRES_DB
+    ports:
+      - '5423:5432'
+    volumes:
+      - ./db.test:/var/lib/postgresql/data
